@@ -5,7 +5,8 @@
 }
 body{
     font-family: 'Mulish', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
 }
 .container{
     width: 1152px;
@@ -86,4 +87,22 @@ section.data p.def{
 }
 .l{
     border: 2px solid red;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    background: rgb(243, 243, 243);
+    border-radius: 20px;
+    color: rgb(143, 138, 138);
+    max-width: 80%;
+}
+@media screen and (max-width:692px){
+    .footer-section{
+        min-width: 90%;
+    }
 }
